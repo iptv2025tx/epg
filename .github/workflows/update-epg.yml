@@ -1,0 +1,31 @@
+name: Update Combined EPG
+
+on:
+  schedule:
+    # Run daily at 4:00 AM UTC (after globetvapp updates at 3:00 AM UTC)
+    - cron: '0 4 * * *'
+  workflow_dispatch:  # Allow manual trigger
+
+jobs:
+  update-epg:
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v4
+
+      - name: Set up Python
+        uses: actions/setup-python@v5
+        with:
+          python-version: '3.11'
+
+      - name: Run EPG combiner
+        run: python combine_epg.py --output epg.xml
+
+      - name: Commit and push if changed
+        run: |
+          git config --local user.email "github-actions[bot]@users.noreply.github.com"
+          git config --local user.name "github-actions[bot]"
+          git add epg.xml
+          git diff --staged --quiet || git commit -m "Update combined EPG - $(date -u '+%Y-%m-%d %H:%M UTC')"
+          git push
