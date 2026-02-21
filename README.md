@@ -1,6 +1,6 @@
 # Combined EPG
 
-Auto-updated daily EPG (Electronic Program Guide) combining multiple sources.
+Auto-updated every 8 hours. EPG (Electronic Program Guide) combining multiple sources.
 
 ## EPG URL
 
