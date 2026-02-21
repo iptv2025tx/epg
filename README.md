@@ -7,19 +7,20 @@ Auto-updated daily EPG (Electronic Program Guide) combining multiple sources.
 Use this URL in your IPTV app:
 
 ```
-https://raw.githubusercontent.com/YOUR_USERNAME/YOUR_REPO/main/epg.xml
+https://github.com/iptv2025tx/epg/raw/refs/heads/main/epg.xml
 ```
 
 ## Sources Included
 
-- **USA**: usa1-5 (US channels)
+- All channels from epgshare01
+- USA Plex, PlutoTV, Samsung, Xumo Streams
 - **UK**: unitedkingdom1-5 (Sky Sports, BBC, ITV, etc.)
 - **Sports**: sports1-3 (International sports channels)
 - **Canada**: canada1-2
 - **Ireland**: ireland1
 - **Australia**: australia1-2
 
-Data sourced from [globetvapp/epg](https://github.com/globetvapp/epg).
+Data sourced from various sources. 
 
 ## Setup Your Own
 
