@@ -34,11 +34,11 @@ from urllib.error import URLError, HTTPError
 # EPG Sources from globetvapp/epg repository
 EPG_SOURCES = {
     # United States
-    "usa1": "https://epgshare01.online/epgshare01/epg_ripper_ALL_SOURCES1.xml.gz",
-    "usa2": "https://github.com/matthuisman/i.mjh.nz/raw/master/SamsungTVPlus/us.xml.gz",
-    "usa3": "https://github.com/matthuisman/i.mjh.nz/raw/master/PlutoTV/us.xml.gz",
-    "usa4": "https://github.com/matthuisman/i.mjh.nz/raw/master/Plex/us.xml.gz",
-    "usa5": "https://raw.githubusercontent.com/globetvapp/epg/main/Usa/usa5.xml",
+    "usa1": "https://epgshare01.online/epgshare01/epg_ripper_ALL_SOURCES1.xml",
+    "usa2": "https://github.com/matthuisman/i.mjh.nz/raw/master/SamsungTVPlus/us.xml",
+    "usa3": "https://github.com/matthuisman/i.mjh.nz/raw/master/PlutoTV/us.xml",
+    "usa4": "https://github.com/matthuisman/i.mjh.nz/raw/master/Plex/us.xml",
+    "usa5": "",
 
     # United Kingdom
     "uk1": "https://raw.githubusercontent.com/globetvapp/epg/main/Unitedkingdom/unitedkingdom1.xml",
